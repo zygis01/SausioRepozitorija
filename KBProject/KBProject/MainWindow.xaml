@@ -1,0 +1,53 @@
+﻿<Window x:Class="KBProject.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KBProject"
+        mc:Ignorable="d"
+        Title="PagrindinisPuslapis" Height="450" Width="800">
+    <Grid Name="PgrPuslapis">
+        <Image Source="C:\Users\Žygis\source\repos\KBProject\KBProject\photos\blood.jpg"
+               Stretch="Fill"/>
+        <TextBlock Text="KRAUJO" 
+                   FontSize="40"  
+                   FontFamily="Gill Sans Ultra Bold Condensed"
+                   SnapsToDevicePixels="True"
+                   VerticalAlignment="Top"
+                   HorizontalAlignment="Center" Margin="294,34,273.6,0" Width="226"/>
+
+        <TextBlock Text="BANKAS"
+                   FontSize="25"
+                   FontFamily="Gill Sans Ultra Bold Condensed"
+                   Foreground="Red"
+                   SnapsToDevicePixels="True"
+                   VerticalAlignment="Top"
+                   HorizontalAlignment="Center" Margin="329,82,311.6,0" Width="153">
+        </TextBlock>
+        <StackPanel Orientation="Horizontal"
+                    Height="30"
+                    VerticalAlignment="Top"
+                    HorizontalAlignment="Center">
+            <Button x:Name="Registracija" 
+                    Content="Registracija"
+                    Foreground="Black"
+                    FontSize="14"
+                    FontFamily="Segoe UI Black" 
+                    Click="Registracija_Click" 
+                    Background="#FFFF4444"
+                    Width="100"/>
+            <Button x:Name="Prisijungimas"
+                    Content="Prisijungimas"
+                    Foreground="Black"
+                    FontSize="15"
+                    FontFamily="Segoe UI Black"
+                    Background="#FFFF4444"
+                    Margin="20 0 0 0" 
+                    Click="Prisijungimas_Click"/>
+        </StackPanel>
+        <Frame Name="MainRemelis"
+               NavigationUIVisibility="Hidden"
+               Margin="0 30 0 0"/>
+    </Grid>
+</Window>
+ 

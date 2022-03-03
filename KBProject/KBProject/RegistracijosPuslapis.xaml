@@ -1,0 +1,122 @@
+﻿<Page x:Class="KBProject.RegistracijosPuslapis"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:KBProject"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="RegPuslapis">
+
+    <Grid>
+        <Image Source="https://www.hdfcergo.com/images/default-source/health-lob/side-effects-of-donating-blood.jpg"
+               Stretch="Fill" 
+               Margin="0,0,0,-0.4"/>
+        <StackPanel Orientation="Vertical"
+                    VerticalAlignment="Top"
+                    HorizontalAlignment="Left" Margin="74, 0, 0, 0">
+            <Label Content="Iveskite savo varda"
+                   Foreground="White"
+                   HorizontalAlignment="Center" Height="41" Width="187"
+                   FontSize="20  "/>
+            <TextBox x:Name="VardoDezute"
+                 Background="White"
+                 Foreground="Black"
+                 BorderThickness="3"
+                 BorderBrush="Black"
+                 HorizontalContentAlignment="Center"
+                     VerticalContentAlignment="Center"
+                     TextChanged="VardoDezute_TextChanged" 
+                     Height="35" 
+                     Width="220"
+                     FontSize="18"/>
+            <Label Content="Iveskite savo pavarde"
+                   Foreground="White"
+                   HorizontalAlignment="Center" Height="50" Width="197"
+                   FontSize="20"/>
+            <TextBox x:Name="PavardesDezute"
+                 Background="White"
+                 Foreground="Black"
+                 BorderThickness="3"
+                 BorderBrush="Black"
+                 HorizontalContentAlignment="Center"
+                     VerticalContentAlignment="Center"
+                     TextChanged="PavardesDezute_TextChanged" 
+                     Height="35" 
+                     Width="222"
+                     FontSize="18"/>
+            <Label Content="Iveskite savo amziu"
+                   Foreground="White"
+                   HorizontalAlignment="Center" Height="51" Width="213"
+                   FontSize="21"
+                   HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="AmziausDezute"
+                    Background="White"
+                    Foreground="Black"
+                    BorderThickness="3"
+                    Width="79"
+                    BorderBrush="Black"
+                    HorizontalContentAlignment="Center" 
+                    TextChanged="AmziausDezute_TextChanged" 
+                    Height="34"
+                    FontSize="18"
+                     VerticalContentAlignment="Center"/>
+            <Label Content="Pasirinkite kraujo grupe"
+                   Foreground="White"
+                   HorizontalAlignment="Center" Height="46" Width="224"
+                   FontSize="20"/>
+            <StackPanel Name="GrupesPanel">
+                <RadioButton Content="Grupe - AB (IV)" 
+                     FontSize="16" 
+                     FontFamily="Franklin Gothic Heavy"
+                     Foreground="White"/>
+                <RadioButton Content="Grupe - B (III)" 
+                     FontSize="16" 
+                     FontFamily="Franklin Gothic Heavy"
+                     Foreground="White"/>
+                <RadioButton Content="Grupe - A (II)" 
+                     FontSize="16" 
+                     FontFamily="Franklin Gothic Heavy"
+                     Foreground="White"/>
+                <RadioButton Content="Grupe - 0 (I)" 
+                     FontSize="16" 
+                     FontFamily="Franklin Gothic Heavy"
+                     Foreground="White"/>
+            </StackPanel>
+            <Label Content="Iveskite norima slaptazodi"
+                   Foreground="White"
+                   HorizontalAlignment="Center" Height="46" Width="224"
+                   FontSize="18"/>
+            <PasswordBox x:Name="SlaptazodzioDezute"
+                         Background="White"
+                         Width="150"
+                         Height="23"
+                         HorizontalAlignment="Left"
+                         BorderBrush="Black"
+                         BorderThickness="3"/>
+        </StackPanel>
+        <TextBlock Text="REGISTRACIJA"
+                   FontSize="60"
+                   FontFamily="OCR A Extended"
+                   VerticalAlignment="Top"
+                   HorizontalAlignment="Center"
+                   Foreground="White" 
+                   Height="100" 
+                   Width="454" Margin="321,12,25,0"/>
+        <Button x:Name="Registruotis"
+                Content="Registruotis"
+                Foreground="Black"
+                Background="White"
+                BorderThickness="10,4"
+                BorderBrush="Black"
+                Width="197"
+                FontFamily="Franklin Gothic Heavy"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Bottom" 
+                Height="56" 
+                Margin="322,0,281,4.6" 
+                SnapsToDevicePixels="True" 
+                Click="Registruotis_Click"/>
+        <Frame x:Name="RegistracijosRemelis" Margin="0 30 0 0"/>
+    </Grid>
+</Page>
